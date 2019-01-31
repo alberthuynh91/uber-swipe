@@ -1,0 +1,40 @@
+
+.App {
+  text-align: center;
+  animation-timing-function: linear;
+}
+
+.info-container {
+  height: 30vh;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 2em;
+}
+
+.photo-container {
+  border: 2px solid red;
+  height: 50vh;
+  
+}
+
+.photo-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.index-container {
+  height: 40px;
+  width: 40px;
+  background-image: radial-gradient(farthest-corner at 70px 10px,
+      rgb(255, 239, 9) 0%, rgb(16, 116, 141) 100%);
+  border-radius: 50%;
+  margin: auto;
+}
+
+.index {
+  color: #ffffff;
+
+  line-height: 40px;
+  font-size: 0.6em;
+}
