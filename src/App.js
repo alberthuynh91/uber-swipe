@@ -3,7 +3,7 @@ import ReactSwipe from 'react-swipe';
 
 import Info from '../src/components/Info'
 import Photo from '../src/components/Photo'
-import { data } from './data.js'
+import { mockApiData } from './mockApiData.js'
 
 import './App.scss';
 
@@ -35,14 +35,13 @@ class App extends Component {
             }
           }}
         >
-          {data.map(({name, description, stockPhoto, sampleImages}, i) => {
+          {mockApiData.map(({name, description, sampleImages}, i) => {
             return (
               <div>
                 <Info
                   index={i+1}
                   name={name}
                   description={description}
-                  stockPhoto={stockPhoto}
                 />
                 <Photo
                   imageSrc={sampleImages[0]}

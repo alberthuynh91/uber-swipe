@@ -1,13 +1,8 @@
-import superia from './photos/superia.jpg'
-import ultramax from './photos/ultramax.jpg'
-import ektachrome from './photos/ektachrome.jpg'
-
-export const data = [
+export const mockApiData = [
   {
     name: 'Kodak Ektachrome E100',
     brand: 'Kodak',
     description: 'Extremely fine grain daylight-balanced color transparency film',
-    stockPhoto: ektachrome,
     speed: 100,
     sampleImages: [
       'https://c2.staticflickr.com/2/1754/40660735900_c3c65b6a51_o.jpg',
@@ -15,10 +10,9 @@ export const data = [
     ]
   },
   {
-    name: 'Kodak Ultra Max 400',
+    name: 'Kodak UltraMax 400',
     brand: 'Kodak',
     description: 'High-speed daylight-balance color negative film',
-    stockPhoto: ultramax,
     speed: 400,
     sampleImages: [
       'https://c2.staticflickr.com/2/1924/43295281240_d252f054a2_o.jpg',
@@ -28,10 +22,9 @@ export const data = [
     ]
   },
   {
-    name: 'Fujifilm Superia 400',
-    brand: 'Fujifilm',
+    name: 'Fuji Superia 400',
+    brand: 'Fuji',
     description: 'All-around film perfect for outdoors or indoors with flash',
-    stockPhoto: superia,
     speed: 400,
     sampleImages: [
       'https://c2.staticflickr.com/2/1938/43539279750_f2fe2a5e70_h.jpg',

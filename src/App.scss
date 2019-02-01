@@ -1,21 +1,20 @@
-
 .App {
   text-align: center;
   animation-timing-function: linear;
 }
 
 .info-container {
-  height: 40vh;
+  height: 30vh;
   margin-left: 2em;
   margin-right: 2em;
-  margin-top: 1.5em;
+  margin-top: 2em;
   img {
     width: 17%;
   }
 }
 
 .photo-container {
-  height: 60vh;
+  height: 70vh;
 }
 
 .photo-container img {
@@ -31,6 +30,9 @@
       rgb(255, 239, 9) 0%, rgb(16, 116, 141) 100%);
   border-radius: 50%;
   margin: auto;
+  margin-bottom: 0.7em;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 .index {
@@ -40,17 +42,19 @@
 }
 
 .title {
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-weight: bold;
+  margin-bottom: 0.7em;
+  color: black;
+}
+
+.description {
+  margin-bottom: 2em;
+  color: grey;
 }
 
 .frame-view-btns-container {
   visibility: hidden;
-}
-
-.stock-photo {
-  padding-top: 1em;
-  padding-bottom: 1em;
 }
 
 @media only screen and (min-width: 479px) {

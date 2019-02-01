@@ -24,9 +24,8 @@ export class Info extends Component {
         >
           <span className="index">{index}</span>
         </div>
-        <img className="stock-photo" src={stockPhoto} alt=""/>
         <div className="title">{name}</div>
-        <p>{description}</p>
+        <div className="description">{description}</div>
       </div>
     )
   }
