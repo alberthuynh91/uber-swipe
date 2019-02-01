@@ -1,11 +1,14 @@
-export const generateRandomColor = () => {
-  const n1 = Math.floor(Math.random() * 300) + 1
-  const n2 = Math.floor(Math.random() * 300) + 1
-  const n3 = Math.floor(Math.random() * 300) + 1
-  const n4 = Math.floor(Math.random() * 70) + 1
-  const n5 = Math.floor(Math.random() * 70) + 1
-  return {
-    backgroundImage: `radial-gradient(farthest-corner at ${n4}px ${n5}px,
-      rgb(${n1}, ${n2}, ${n3}) 0%, rgb(${n3}, ${n1}, ${n2}) 100%)`
-  }
+export const debounce = (func, wait, immediate) => {
+	var timeout
+	return function() {
+		var context = this, args = arguments
+		var later = function() {
+			timeout = null
+			if (!immediate) func.apply(context, args)
+		}
+		var callNow = immediate && !timeout
+		clearTimeout(timeout)
+		timeout = setTimeout(later, wait)
+		if (callNow) func.apply(context, args)
+	}
 }
