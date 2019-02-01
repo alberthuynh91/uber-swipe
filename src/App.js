@@ -7,13 +7,6 @@ import { mockApiData } from './mockApiData.js'
 
 import './App.scss';
 
-const frameViewButtons = (el) => (
-  <div className="frame-view-btns-container">
-    <button onClick={() => el.next()}>Next</button>
-    <button onClick={() => el.prev()}>Previous</button>
-  </div>
-)
-
 class App extends Component {
   constructor(props) {
     super(props)
@@ -31,7 +24,7 @@ class App extends Component {
           swipeOptions={{ 
             continuous: false,
             callback: (b) => {
-              console.log(`hello world`, b)
+              // console.log(`hello world`, reactSwipeEl)
             }
           }}
         >
@@ -46,14 +39,22 @@ class App extends Component {
                 <Photo
                   imageSrc={sampleImages[0]}
                 />
+                <div className="frame-view-btns-container">
+                  <div className="prev" onClick={() => reactSwipeEl.prev()}>
+                    <span className="arrow">&#10094;</span>
+                  </div>
+                  <div className="next" onClick={() => reactSwipeEl.next()}>
+                    <span className="arrow">&#10095;</span>
+                  </div>
+                </div>
               </div>
             )
           })}
         </ReactSwipe>
-        {frameViewButtons(reactSwipeEl)}
       </div>
     );
   }
 }
 
 export default App;
+ 

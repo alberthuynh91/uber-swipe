@@ -5,8 +5,8 @@ export const mockApiData = [
     description: 'Extremely fine grain daylight-balanced color transparency film',
     speed: 100,
     sampleImages: [
-      'https://c2.staticflickr.com/2/1754/40660735900_c3c65b6a51_o.jpg',
-      'https://c2.staticflickr.com/2/1917/31560985708_064802f793_h.jpg'
+      'https://c2.staticflickr.com/2/1885/43473683164_2b06f4ab95_h.jpg',
+      'https://c2.staticflickr.com/2/1938/43539285130_740ef1c711_b.jpg'
     ]
   },
   {
@@ -17,8 +17,7 @@ export const mockApiData = [
     sampleImages: [
       'https://c2.staticflickr.com/2/1924/43295281240_d252f054a2_o.jpg',
       'https://c2.staticflickr.com/2/1913/45109222171_b952aa1fca_o.jpg',
-      'https://c2.staticflickr.com/2/1966/43295279200_4681783a24_o.jpg',
-      'https://c2.staticflickr.com/2/1938/44197941045_095f981b4e_o.jpg',
+      'https://c2.staticflickr.com/2/1966/43295279200_4681783a24_o.jpg'
     ]
   },
   {
@@ -28,8 +27,8 @@ export const mockApiData = [
     speed: 400,
     sampleImages: [
       'https://c2.staticflickr.com/2/1938/43539279750_f2fe2a5e70_h.jpg',
+      'https://c2.staticflickr.com/2/1966/43295279200_4681783a24_o.jpg',
       'https://c1.staticflickr.com/1/837/28594927757_472d5d2f84_h.jpg',
-      'https://c2.staticflickr.com/2/1724/41746309434_dc99116e0c_o.jpg'
     ]
   }
 ]
