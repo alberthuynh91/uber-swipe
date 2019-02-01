@@ -3,24 +3,9 @@ import ReactSwipe from 'react-swipe';
 import Info from './components/Info/Info'
 import Photo from './components/Photo/Photo'
 import { mockApiData } from './mockApiData.js'
-import { debounce } from './utils'
 import './App.scss';
 
 class App extends Component {
-
-  resize = debounce(() => {
-    if (window.innerWidth <= 479) {
-      window.location.reload()
-    }
-  }, 750)
-
-  componentDidMount() {
-    window.addEventListener('resize', this.resize)
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.resize)
-  }
   
   render() {
     let reactSwipeEl;
@@ -35,7 +20,7 @@ class App extends Component {
         >
           {mockApiData.map(({name, description, sampleImages}, i) => {
             return (
-              <div>
+              <div className="container">
                 <Info index={i+1} name={name} description={description}/>
                 <Photo imageSrc={sampleImages[0]} />
                 <div className="frame-view-btns-container">
