@@ -1,0 +1,37 @@
+.info-container {
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 2em;
+  margin-bottom: 4em;
+}
+
+.index-container {
+  height: 40px;
+  width: 40px;
+  background-image: radial-gradient(farthest-corner at 70px 10px,
+      rgb(255, 239, 9) 0%, rgb(16, 116, 141) 100%);
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 0.7em;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.index {
+  color: #ffffff;
+  line-height: 40px;
+  font-size: 0.6em;
+}
+
+.title {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 0.7em;
+  color: black;
+}
+
+.description {
+  font-size: 1em;
+  margin-bottom: 2em;
+  color: grey;
+}
